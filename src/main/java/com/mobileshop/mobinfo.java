@@ -118,7 +118,7 @@ public class mobinfo extends JFrame implements ActionListener {
 		String s = ae.getActionCommand();
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+			Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 			if (s.equals("MOBILE INFO")) {
 				String[] column = { "Prod_ID", "Prod_nm", "Comp_nm", "Date", "Prod_price", "Prod_quantity", "Prod_type",
 						"Total Amount" };

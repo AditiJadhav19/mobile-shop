@@ -30,7 +30,7 @@ public class add_emp extends JFrame implements ActionListener {
 		 * try
 		 * {
 		 * Class.forName("com.mysql.jdbc.Driver");
-		 * co=DriverManager.getConnection("jdbc:mysql://localhost:3306/sana","root",
+		 * co=DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db","root",
 		 * "root");
 		 * st=co.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.
 		 * CONCUR_UPDATABLE);
@@ -212,7 +212,7 @@ public class add_emp extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());
@@ -237,7 +237,7 @@ public class add_emp extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());
@@ -263,7 +263,7 @@ public class add_emp extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());
@@ -303,7 +303,7 @@ public class add_emp extends JFrame implements ActionListener {
 		{
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				String[] column = { "Emp_ID", "Emp_nm", "Emp_mob", "Emp_addr", "Emp_sal" };
 				PreparedStatement ps = co.prepareStatement("select * from addemp");
 				ResultSet rs = ps.executeQuery();

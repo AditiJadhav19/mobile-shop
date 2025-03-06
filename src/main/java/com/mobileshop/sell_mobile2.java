@@ -191,7 +191,7 @@ public class sell_mobile2 extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());
@@ -224,7 +224,7 @@ public class sell_mobile2 extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());
@@ -259,7 +259,7 @@ public class sell_mobile2 extends JFrame implements ActionListener {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				JOptionPane.showMessageDialog(this, "Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				JOptionPane.showMessageDialog(this, "Connection Created");
 
 				int a = Integer.parseInt(t1.getText());

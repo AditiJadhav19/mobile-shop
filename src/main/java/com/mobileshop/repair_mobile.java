@@ -428,7 +428,7 @@ public class repair_mobile extends JFrame implements ActionListener, TextListene
     public void connection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
         } catch (ClassNotFoundException ex) {
         } catch (SQLException ex) {
         }

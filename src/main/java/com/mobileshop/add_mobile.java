@@ -36,7 +36,7 @@ public class add_mobile extends JFrame implements ActionListener, TextListener//
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			// JOptionPane.showMessageDialog(this,"Driver registered");
-			co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+			co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 			// JOptionPane.showMessageDialog(this,"Connection created");
 			st = co.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 		} catch (SQLException ex) {
@@ -396,7 +396,7 @@ public class add_mobile extends JFrame implements ActionListener, TextListener//
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				// JOptionPane.showMessageDialog(this,"Driver Registered");
-				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+				Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 				// JOptionPane.showMessageDialog(this,"Connection Created");
 				int a = Integer.parseInt(t1.getText());
 				String s1 = t2.getText();

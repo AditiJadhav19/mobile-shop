@@ -51,7 +51,7 @@ public class sell_mobile extends JFrame implements ActionListener, TextListener 
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sana", "root", "root");
+			co = DriverManager.getConnection("jdbc:mysql://localhost:3306/mobile-shop-management-db", "root", "root");
 			st = co.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 
 		} catch (SQLException ex) {
