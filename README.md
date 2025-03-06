@@ -72,7 +72,7 @@ src/
 
 1. **Clone the repository**:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/AditiJadhav19/mobile-shop-management.git
     ```
 
 2. **Open the project in Visual Studio Code**.
