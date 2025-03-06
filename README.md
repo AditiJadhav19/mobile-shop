@@ -11,5 +11,3 @@ The Mobile Shop Management System is a Java-based application designed to manage
 - Manage sales and generate bills.
 - Track employee attendance.
 - Generate reports and export data to PDF.
-
-## Project Structure
